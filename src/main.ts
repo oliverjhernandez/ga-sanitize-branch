@@ -10,6 +10,7 @@ async function run(): Promise<void> {
             .replace(/[\W_]+/g, '-')
             .substring(0, 16)
         core.exportVariable("BRANCH_NAME", sanitizedBranchName)
+        console.log(sanitizedBranchName)
     } catch (error) {}
 }
 
