@@ -1,0 +1,16 @@
+name: 'Alfred'
+description: 'Sanitize branch name'
+author: 'Oliver Hernandez'
+
+inputs:
+  branch_name: 
+    required: true
+    description: 'Branch name to sanitize'
+
+runs:
+  using: 'node16'
+  main: 'dist/main.js'
+
+branding:
+  icon: star
+  color: green
